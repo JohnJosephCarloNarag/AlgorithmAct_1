@@ -7,7 +7,7 @@
 #include <string>
 
 struct Node{
-    std::string Pname;
+    string Pname;
     int Pscore;
     struct Node *next;
 };
@@ -17,10 +17,10 @@ class PlayerSS_LL{ //Player Scoreboard System Linked List Header
 	public:
 		PlayerSS_LL() : head(NULL) {}
 		
-		void Add(std::string name, int score); //append node
+		void Add(string name, int score); //append node
 		void Display(/*void*/); //display node
-		void Delete(std::string name); //delete node
-		void Update(std::string name, int score); //Update node
+		void Delete(string name); //delete node
+		void Update(string name, int score); //Update node
 };
 
 
